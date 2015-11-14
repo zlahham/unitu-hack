@@ -5,35 +5,32 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
   </head>
 
   <body ng-controller="MainCtrl" class="container"  ng-app="aftBasic">
 
-  <div class='row'>
-    <div class="container well">
-      <div class="col-xs-6">
-        <h2>Economics Department</h2>
-        <h3>Macroeconomics EC103 Seminar</h3>
-      </div>
+    <div class='row'>
+      <div class="container well">
+        <div class="col-xs-6">
+          <h2>Economics Department</h2>
+          <h3>Macroeconomics EC103 Seminar</h3>
+        </div>
 
-      <div class='col-xs-6'>
-        <ul class='legend'>
-          <li><h4>Legend</h4></li>
-          <li><div class="label label-success">Up Arrow</div></li>
-          <li><div class="label label-danger">Down Arrow</div></li>
-        </ul>
+        <div class='col-xs-6'>
+          <ul class='legend'>
+            <li><h4>Legend</h4></li>
+            <li><div class="label label-success">Up Arrow</div></li>
+            <li><div class="label label-danger">Down Arrow</div></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
     <div class="attendees">
       <div class="attendee" ng-repeat="attendee in attendees">
-        <div class="red" ng-style="{opacity: (-0.01 * attendee.status)}">
-          <p>Student: {{attendee.attendeeId}}</p>
-        </div>
-        <div class="green" ng-style="{opacity: (0.01 * attendee.status)}">
-          <p>Student: {{attendee.attendeeId}}</p>
-        </div>
+        <div class="red" ng-style="{opacity: (-0.05 * attendee.status)}"></div>
+        <div class="green" ng-style="{opacity: (0.05 * attendee.status)}"></div>
       </div>
     </div>
 
