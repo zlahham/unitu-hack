@@ -1,0 +1,26 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+  <body ng-controller="MainCtrl" class="container"  ng-app="aftBasic">
+
+  <h2>
+    push up key when you like something, push down key when you dislike something
+  </h2>
+  <div class="attendees">
+    <div class="attendee" ng-repeat="attendee in attendees">
+      <div class="red" ng-style="{opacity: (-0.01 * attendee.status)}"></div>
+      <div class="green" ng-style="{opacity: (0.01 * attendee.status)}"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="http://code.angularjs.org/1.2.6/angular.min.js"></script>
+  <script type="text/javascript" src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="_firebase.js"></script>
+  </body>
+</html>
