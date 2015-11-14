@@ -1,0 +1,9 @@
+{
+  "firebase": "class-vote",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
