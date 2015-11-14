@@ -1,4 +1,4 @@
-.jumbotron {
+.container .well {
   margin-top: 30px;
 }
 
@@ -30,4 +30,9 @@ div.attendee {
 
 .red {
   background: red;
+}
+
+.legend {
+  list-style-type: none;
+  float: right;
 }
