@@ -28,8 +28,12 @@
 
     <div class="attendees">
       <div class="attendee" ng-repeat="attendee in attendees">
-        <div class="red" ng-style="{opacity: (-0.01 * attendee.status)}"></div>
-        <div class="green" ng-style="{opacity: (0.01 * attendee.status)}"></div>
+        <div class="red" ng-style="{opacity: (-0.01 * attendee.status)}">
+          <p>Student: {{attendee.attendeeId}}</p>
+        </div>
+        <div class="green" ng-style="{opacity: (0.01 * attendee.status)}">
+          <p>Student: {{attendee.attendeeId}}</p>
+        </div>
       </div>
     </div>
 

@@ -24,10 +24,11 @@ app.controller('MainCtrl', function($scope, firebase) {
     });
 
     var myName = localStorage.getItem('attendee');
+    var studentNumber = 0;
 
     if (!myName) {
       meRef = newAttendee;
-      newAttendee.set({status: 0});
+      newAttendee.set({status: 0, attendeeId: studentNumber++});
       localStorage.setItem('attendee', meRef.name());
     } else {
       meRef = attendeesRef.child(myName);
@@ -50,6 +51,7 @@ app.controller('MainCtrl', function($scope, firebase) {
     });
 
     $scope.calcOpacity = function(color) {
+
       if (color === 'red') {
         return -1 * me.status;
       } else {
