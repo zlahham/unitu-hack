@@ -20,8 +20,10 @@ div.attendee {
 
 .green {
   background: green;
+  border-radius: 10px;
 }
 
 .red {
   background: red;
+  border-radius: 10px;
 }
