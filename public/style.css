@@ -1,5 +1,6 @@
 .attendees {
   margin-top: 30px;
+  margin-right: 15px;
 }
 
 div.attendee {
@@ -16,14 +17,13 @@ div.attendee {
   width: 100%;
   height: 100%;
   position: absolute;
+  border-radius: 10px;
 }
 
 .green {
   background: green;
-  border-radius: 10px;
 }
 
 .red {
   background: red;
-  border-radius: 10px;
 }
