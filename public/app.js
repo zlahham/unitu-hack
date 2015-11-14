@@ -55,6 +55,5 @@ app.controller('MainCtrl', function($scope, firebase) {
       } else {
         return me.status;
       }
-    }
-
+    };
 });
