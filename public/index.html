@@ -1,26 +1,38 @@
 <html>
   <head>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
   </head>
 
   <body ng-controller="MainCtrl" class="container"  ng-app="aftBasic">
-
-  <h2>Please push up when you understand the current discussion</h2>
-  <h2>Please push down when you do not understand the current discussion</h2>
-
-  <div class="attendees">
-    <div class="attendee" ng-repeat="attendee in attendees">
-      <div class="red" ng-style="{opacity: (-0.01 * attendee.status)}"></div>
-      <div class="green" ng-style="{opacity: (0.01 * attendee.status)}"></div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="...">
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="jumbotron">
+      <h2>Please push up when you understand the current discussion</h2>
+      <h2>Please push down when you do not understand the current discussion</h2>
     </div>
-  </div>
-  <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
-  <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-  <script type="text/javascript" src="_firebase.js"></script>
+
+    <div class="attendees">
+      <div class="attendee" ng-repeat="attendee in attendees">
+        <div class="red" ng-style="{opacity: (-0.01 * attendee.status)}"></div>
+        <div class="green" ng-style="{opacity: (0.01 * attendee.status)}"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="_firebase.js"></script>
+
   </body>
 </html>
